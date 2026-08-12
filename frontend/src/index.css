@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-charcoal text-chalk font-body;
+  font-feature-settings: "tnum" 1;
+}
+
+/* Tabular numerals everywhere numbers appear — scoreboard feel */
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+
+::selection {
+  background: #C6FF3D;
+  color: #15181C;
+}
